@@ -1,0 +1,16 @@
+Well, the documentation is missing yet, but...
+
+!!!!!! SEE mcabberrc.example !!!!!!
+
+A configuration file is necessary.
+Its name is $HOME/.mcabber/mcabberrc (or $HOME/.mcabberrc).
+Please see the sample config file!
+
+You can use the -f option to specify another configuration file.
+
+
+This software is under development, please give me some feedback (and some
+patches if you can!).  Or just tell me you're using it... ;-)
+
+  Mikael <mcabber@lilotux.net>
+
