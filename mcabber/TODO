@@ -1,0 +1,55 @@
+
+BUGS:
+
+
+
+TODO:
+
+* Improve debug logging system
+* Presence notification is always accepted.  We should ask...
+* UTF-8 support (Can somebody help me?)
+* Display status / chat mode
+* Pending message flag is not displayed when buddy is outside Contact window,
+  maybe we could show it someway (maybe just a flag?).
+* Show number of online contacts in folded groups
+* Buddy buffer in full width (handy for cut'n paste!)
+  (i.e. hide roster window)
+* Create .mcabber and .mcabber/histo dirs if needed.  Or maybe not.
+  However it could be a good idea to check the permissions.
+* Publish personal information
+* Handle message type "error"
+* Show status changes in buddy window (if open)?
+* Options completion
+* Configuration file parsing: parse as commands (set, alias, bind)
+* Auto away
+* Add a sample script for the events command
+* Make first Ctrl-C leave multi-line mode
+* Keep track of buddy resources.  Ex.:
+  - buddy A connects with resource r1
+  - buddy A connects with resource r2
+  - A/r2 disconnects
+  Then we see A as being offline, although we should still see A/r1 online
+
+* File transfer? :)
+* Conferences
+
+* Commands:
+
+  - /buffer <clear|top|bottom>
+    + /buffer % 50          (jump to 50 %)
+    + /buffer date $date    (jump to first msg after $date)
+    + /buffer search $string
+      (backward or forward? maybe search_backward/search_forward)
+  - /group <expand|shrink|toggle>
+    + rename
+  - /say_to <jid> blabla
+  - /info [jid]
+    (request info to the server if the buddy is not in the roster)
+  - /server register|unregister
+  - /auth request|send [jid]
+  - /search <jid>|name
+    (server search)
+  - status status Message
+  - /help
+  - /rawxml...
+
