@@ -1,0 +1,94 @@
+# Sample ~/.mcabber/mcabberrc file
+
+# The jid will be the following: username@server/resource
+# If password is not given, it will be interactively asked for.
+# If port is not given, default Jabber port will be used.
+# Use ssl = 1 to enable SSL
+
+set username = yourusername
+# Note: if the password contains leading or trailing spaces, you must
+# enclose it with quotes: set password = " example password "
+#set password = yourpassword
+set server = your.jabber.server
+#set port = 5222
+set ssl = 0
+# If you don't know what a resource is, you can leave "mcabber" here.
+set resource = mcabber
+#set priority = 3
+
+# Keepalive
+# If you need a ping/keepalive to leave your connection open, you
+# can use the pinginterval.  Setting this option to 0 disables the ping.
+# Default value is 40 seconds.
+#set pinginterval = 40
+
+# Set hide_offline_buddies to 1 to display only connected buddies
+# in the roster.
+#set hide_offline_buddies = 0
+
+# Set the auto-away timeout, in seconds.  If set to a value >0,
+# mcabber will change your status to away if no real activity is detected
+# (command, message, move in the buddylist...).  Note: auto-away only changes
+# the status when it is "available" (online) or "free_for_chat".
+#set autoaway = 0
+
+# History logging
+# You can save the messages history: set logging = 1
+# You can load (read) the messages history: set load_logs = 1
+# Default logging directory (logging_dir) is $HOME/.mcabber/histo/
+# Defaults for logging, load_logs are 0 (disabled)
+# Note: the logging directory must exist if you enable logging, mcabber
+#       will not create it.
+#set logging = 1
+#set load_logs = 1
+#set logging_dir = /home/mikael/.mcabber/histo/
+
+# External command for events
+# You can specify a script or process to be launched when an event occurs.
+# The command is called the following way:
+#   $events_command MSG IN jabber@id        (when receiving a message)
+#   $events_command MSG OUT jabber@id       (when sending a message)
+#   $events_command STATUS X jabber@id      (new buddy status is X)
+# See sample script in contrib/ directory.
+#set events_command = /home/mikael/.mcabber/eventcmd
+
+# Traces logging
+# If you want advanced traces, please specify a file and a level here.
+# There are currently 2 traceloglog levels:
+#  lvl 1: most events of the log window are written to the file
+#  lvl 2: debug logging (XML, etc.)
+# Default is level 0, no trace logging
+#set tracelog_level = 1
+#set tracelog_file = /home/mikael/mcabber.log
+
+#  Status messages
+# The "message" value will override all others, take care!
+#set message = Unique message status
+#set message_avail     = I'm available
+#set message_free      = I'm free for chat
+#set message_dnd       = Please do not disturb
+#set message_notavail  = I'm not available
+#set message_away      = I'm away
+#set message_autoaway  = Auto-away
+
+#  The colors
+# Colors are: black, red, green, yellow, blue, magenta, cyan, white
+#set color_background   = blue
+#set color_general      = white
+#set color_newmessage   = red
+#set color_rosternormal = magenta
+#set color_rosterselect = black
+#set color_backselected = cyan
+
+#  Aliases
+alias online   = status online
+alias away     = status away
+alias dnd      = status dnd
+alias notavail = status notavail
+
+#  Key bindings
+# Ctlr-X (24) bound to /roster alternate
+bind 24 = roster alternate
+# F5 (269) bound to /roster toggle_offline  (centericq-like, IIRC)
+bind 269 = roster toggle_offline
+

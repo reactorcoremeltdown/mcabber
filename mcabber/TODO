@@ -1,0 +1,47 @@
+
+BUGS:
+
+* The PgUp and Ins keys do not work for some people
+  Cannot reproduce, any help appreciated.
+* The euro symbol is not correctly encoded/decoded
+
+TODO:
+
+* Implement automatic reconnection after network failure
+* Presence notification is always accepted.  We should ask...
+* UTF-8 support (Can somebody help me?)
+* Display status / chat mode
+* Pending message flag is not displayed when buddy is outside Contact window,
+  maybe we could show it someway (maybe just a flag?).
+* Show number of online contacts in folded groups
+* Buddy buffer in full width (handy for copy'n paste!)
+  (i.e. hide roster window)
+* Publish personal information
+* Show status changes in buddy window (if open)?
+* Options completion
+* Keep track of buddy resources.  Ex.:
+  - buddy A connects with resource r1
+  - buddy A connects with resource r2
+  - A/r2 disconnects
+  Then we see A as being offline, although we should still see A/r1 online
+
+* File transfer? :)
+* Conferences
+
+* Commands:
+
+  - /buffer <clear|top|bottom>
+    + /buffer % 50          (jump to 50 %)
+    + /buffer date $date    (jump to first msg after $date)
+  - /group <expand|shrink|toggle>
+    + rename
+  - /say_to <jid> blabla
+  - /info [jid]
+    (request info to the server if the buddy is not in the roster)
+  - /server register|unregister
+  - /auth request|send [jid]
+  - /search <jid>|name
+    (server search)
+  - /help
+  - /rawxml...
+
