@@ -1,0 +1,37 @@
+
+BUGS:
+
+* mcabber does not work with gnutls
+
+
+TODO:
+
+* Improve the completion system
+* Connect hook
+* Macros
+* Nick highlight
+* Show number of online contacts in folded groups
+* Publish personal information
+* Colors for presence
+* MUC: advanced settings for room creation
+* MUC: display roles of room members
+* "Offline roster" (when disconnected)
+* Maybe cache iq:version and show version in /info, if available
+* Sort roster by status
+* 2-levels roster display (jids, resources)
+* "Ignore list" (privacy lists)
+  See JEP-0191: Simple Communications Blocking (very new)
+* Use DNS _xmpp-client._tcp service
+* Options scrollback_time/scrollback_lines (a la irssi)
+
+* File transfer? :)
+
+* Commands:
+
+  - /roster enable|disable xml
+  - /info [jid]
+    (request info to the server if the buddy is not in the roster)
+  - /server register|unregister
+  - /search <jid>|name
+    (server search)
+
