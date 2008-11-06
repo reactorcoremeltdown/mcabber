@@ -1,0 +1,47 @@
+
+BUGS:
+
+* SSL certificate verification does not work with gnutls
+* Unicode JIDs are not supported
+
+
+TODO:
+
+* Improve the completion system
+* Use new Entity Time specs (XEP-0202) if possible in
+ /request time.
+* Enable /roster search for offline (hidden) buddies (hidden groups, etc.)
+* Publish personal information
+* MUC: advanced settings for room creation
+* MUC: display roles of room members
+* MUC: ignore patterns
+* "Offline roster" (when disconnected)
+* Maybe cache iq:version and show version in /info, if available
+* Sort roster by status
+* 2-levels roster display (jids, resources)
+* XEP-0186: Invisible
+* "Ignore list" (privacy lists)
+  See XEP-0191: Simple Communications Blocking
+* Use DNS _xmpp-client._tcp service
+* Mouse support?
+* Human-readable key binding config?
+* Possibility to hide log window(?)
+* Copy highlighted messages to the [status] window (or another one)
+* Improve /info, esp. in MUC rooms
+* Update the terminal's title
+  (Can this be done from an event script?)
+* Message filters
+* Data Forms
+
+* File transfer? :)
+
+* Commands:
+
+  - /roster enable|disable xml
+  - /highlight nick
+  - /info [jid]
+    (request info to the server if the buddy is not in the roster)
+  - /server register|unregister
+  - /search <jid>|name
+    (server search)
+  - /buffer save file
