@@ -1,0 +1,101 @@
+dev (13)
+
+ * Rename jep00{22,85} to xep00{22,85}
+ * Rename buddy_resource_jep{22,85}() to buddy_resource_xep{22,85}()
+ * Changeset e45d13074721
+
+  -- Mikael Berthe, 2010-04-03
+
+dev (12)
+
+ * Add scr_getlogwinheight()
+ * Changeset d13315366ba5
+
+  -- Mikael Berthe, 2010-03-24
+
+dev (11)
+
+ * s/MORE_HOOK/MORE_HANDLER/ in handler return code
+ * Changeset 1c3efa9bc422
+
+  -- Mikael Berthe, 2010-03-22
+
+dev (10)
+
+ * Add "hook-unread-list-change"
+ * Changeset 9daf6b3f30d6
+
+  -- Mikael Berthe, 2010-03-21
+
+dev (9)
+
+ * Add roster UI priority
+   roster_setuiprio(), roster_getuiprio(), buddy_getuiprio(),
+   scr_setattentionflag_if_needed()
+ * Changeset b135572fcd26
+
+  -- Mikael Berthe, 2010-03-21
+
+dev (8)
+
+ * Changeset 47699a09ceb3
+   Rework the whole hook system.  Hook handler API slightly modified.
+ * Changeset 5e2db25fdb17
+   Rename "hook-message-in" to "hook-post-message-in"
+ * Changeset 246c5d359c97
+   Add "hook-pre-message-in"
+   Incoming messages can be filtered.
+
+  -- Mikael Berthe, 2010-03-20
+
+dev (7)
+
+ * Add scr_gettextheight()
+ * Changeset 6e0a8bfb3a01
+
+  -- Myhailo Danylenko, 2010-03-14
+
+dev (6)
+
+ * Add urgent flag to the hook-message-in hook
+ * Changeset 1f913c92c9b2
+
+  -- Mikael Berthe, 2010-03-14
+
+dev (5)
+
+ * Add resource name to the hook-message-in hook
+ * Changeset 5c043358ded0
+
+  -- Mikael Berthe, 2010-03-14
+
+dev (4)
+
+ * Big API cleanup (functions renamed)
+ * Min API 4
+ * Changeset e4378fbab5d7
+
+  -- Mikael Berthe, 2010-03-14
+
+dev (3)
+
+ * settings_set_guard() returns success status and will refuse to replace an
+   existing guard
+ * Min API 3
+ * Changeset d80a9e32ab1a
+
+ -- Myhailo Danylenko, 2010-03-13
+
+dev (2)
+
+ * Add api.h
+ * Add scr_gettextwidth() (61f0482d3993)
+ * Changeset e7ce50fe19a9
+
+ -- Myhailo Danylenko, 2010-03-13
+
+dev (1)
+
+ * Initial API version
+
+ -- Myhailo Danylenko, 2010-03-13
